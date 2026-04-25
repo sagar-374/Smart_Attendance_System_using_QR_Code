@@ -1,0 +1,78 @@
+.attendance-page {
+  min-height: calc(100vh - 70px);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0f172a, #020617);
+}
+
+.attendance-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.4);
+}
+
+.attendance-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #e5e7eb;
+  letter-spacing: 0.5px;
+}
+
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.attendance-table thead {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.attendance-table th {
+  padding: 14px;
+  text-align: center;
+  color: #93c5fd;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.attendance-table td {
+  padding: 14px;
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 14px;
+}
+
+.attendance-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.attendance-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transition: 0.3s ease;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 768px) {
+  .attendance-card {
+    padding: 20px;
+  }
+
+  .attendance-card h2 {
+    font-size: 22px;
+  }
+
+  .attendance-table th,
+  .attendance-table td {
+    padding: 10px;
+    font-size: 13px;
+  }
+}
