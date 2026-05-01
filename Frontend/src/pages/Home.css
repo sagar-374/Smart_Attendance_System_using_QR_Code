@@ -1,0 +1,115 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 12px;
+  letter-spacing: 0.8px;
+}
+
+.hero-subtitle {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* Cards Grid */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+/* Role Cards */
+.role-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 36px 28px;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  transition: all 0.25s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 45px rgba(59, 130, 246, 0.35);
+}
+
+.role-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.role-card p {
+  font-size: 14px;
+  margin-bottom: 26px;
+  color: #cbd5f5;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Admin Button */
+.role-card.admin .btn {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #eef2ff;
+}
+
+.role-card.admin .btn:hover {
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.45);
+}
+
+/* Faculty Button */
+.role-card.faculty .btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #052e16;
+}
+
+.role-card.faculty .btn:hover {
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.45);
+}
+
+/* Student Button */
+.role-card.student .btn {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #eff6ff;
+}
+
+.role-card.student .btn:hover {
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+}
