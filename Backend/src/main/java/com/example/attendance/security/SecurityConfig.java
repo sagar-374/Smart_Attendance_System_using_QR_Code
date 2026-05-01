@@ -84,7 +84,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("https://smart-attendance-system-frontend-bj.vercel.app/", "http://localhost:4050"));
+        config.setAllowedOrigins(List.of("https://smart-attendance-system-using-qr-co-three.vercel.app/", "http://localhost:4050"));
         config.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS"));
         config.setAllowedHeaders(List.of("Authorization","Content-Type"));
         config.setAllowCredentials(true);

@@ -11,7 +11,7 @@ import com.example.demo.dto.LoginRequest;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "https://smart-attendance-system-frontend-bj.vercel.app/")
+@CrossOrigin(origins = "https://smart-attendance-system-using-qr-co-three.vercel.app/")
 public class AuthController {
 
     private final JwtUtil jwtUtil;

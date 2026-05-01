@@ -10,7 +10,7 @@ import com.example.attendance.service.LectureService;
 
 @RestController
 @RequestMapping("/api/lecture")
-@CrossOrigin(origins = {"https://smart-attendance-system-frontend-bj.vercel.app/","*"})
+@CrossOrigin(origins = {"https://smart-attendance-system-using-qr-co-three.vercel.app/","*"})
 public class LectureController {
 
     private final LectureService lectureService;
