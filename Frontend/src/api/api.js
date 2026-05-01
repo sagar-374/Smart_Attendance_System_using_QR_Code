@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://smartattendancesystemusingqrcodebackend-production.up.railway.app/",
+  baseURL: "https://smartattendancesystemusingqrcode-production.up.railway.app/",
   // timeout: 10000, // // OPTIONAL: prevent infinite wait
 });
 
