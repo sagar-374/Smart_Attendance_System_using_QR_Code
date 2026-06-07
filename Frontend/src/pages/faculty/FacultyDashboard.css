@@ -1,0 +1,85 @@
+/* Page Background */
+.dashboard-bg {
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Location Card */
+.location-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Card Rows */
+.card-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Glass Cards */
+.glass-card {
+  width: 260px;
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.45);
+}
+
+/* Card Headings */
+.glass-card h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Card Text */
+.glass-card p {
+  font-size: 14px;
+  color: #e5e7eb;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.glass-card button {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.glass-card button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .glass-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
